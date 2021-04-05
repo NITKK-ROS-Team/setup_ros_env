@@ -1,8 +1,15 @@
-alias cw='cd ~/ros1_ws'
-alias cs='cd ~/ros1_ws/src'
-alias cm='cd ~/ros1_ws && catkin_make'
-alias python='python3'
+if test -z $1;then
+echo "Set ros1 workspace. (\$ sh ros1_init.sh /home/ubuntu/Desktop/ros1_ws)"
+exit 1
+fi
+
+echo $1
+
+alias cw='cd '$1
+alias cs='cd '$1'/src'
+alias cm='cd '$1' && catkin_make'
+
 source /opt/ros/noetic/setup.bash
-source ~/ros1_ws/devel/setup.bash
+source $1/devel/setup.bash
 
 export PS1='($ROS_DISTRO):\[\033[01;34m\]\w\[\033[00m\]\$ '
