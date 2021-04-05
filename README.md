@@ -33,5 +33,5 @@ example@example:~$ ros2_init
 ## About writer
 
 - Ar-Ray : Japanese student. 
-- Brog(Japanese) : https://ar-ray.hatenablog.com/
+- Blog(Japanese) : https://ar-ray.hatenablog.com/
 - Twitter : https://twitter.com/Ray255Ar
