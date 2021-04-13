@@ -7,7 +7,7 @@ echo $1
 
 alias cw='cd '$1
 alias cs='cd '$1'/src'
-alias cm='cd '$1' && colcon build'
+alias cm='cd '$1' && colcon build --symlink-install'
 
 source /opt/ros/foxy/setup.bash
 source $1/install/local_setup.bash
