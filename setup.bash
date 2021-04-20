@@ -1,7 +1,7 @@
-#!/bin/sh
+#!/bin/bash
 cd `dirname $0`
-cp ./ros1_init.sh ~/.ros1_init.sh
-cp ./ros2_init.sh ~/.ros2_init.sh
+cp ./ros1_init.bash ~/.ros1_init.bash
+cp ./ros2_init.bash ~/.ros2_init.bash
 
 echo "if ! test -z \"\$ROS_DISTRO\"; then" >> ~/.bashrc
 echo "export PS1=\"(\$ROS_DISTRO):\[\033[01;34m\]\w\[\033[00m\]\$ \"" >> ~/.bashrc
@@ -13,7 +13,7 @@ if test -z $ros1_workspace;then
 echo "skip setting"
 else
 echo $ros1_workspace
-echo "alias ros1_init=\"source ~/.ros1_init.sh $ros1_workspace\"" >> ~/.bashrc
+echo "alias ros1_init=\"source ~/.ros1_init.bash $ros1_workspace\"" >> ~/.bashrc
 
 fi
 ## --------------------------------------------------------
@@ -22,5 +22,5 @@ if test -z $ros2_workspace;then
 echo "skip setting"
 else
 echo $ros2_workspace
-echo "alias ros2_init=\"source ~/.ros2_init.sh $ros2_workspace\"" >> ~/.bashrc
+echo "alias ros2_init=\"source ~/.ros2_init.bash $ros2_workspace\"" >> ~/.bashrc
 fi
