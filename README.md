@@ -4,14 +4,13 @@ Display the ROS environment on the terminal like pyenv.
 
 ![example](images_for_readme/example.png)
 
-## Setup (Ubuntu 20.04 LTS + ROS-Foxy + ROS-Noetic)
+## Setup 
 
 ```bash
 $ cd ~
 $ git clone https://github.com/Ar-Ray-code/setup_ros_env.git
 $ cd setup_ros_env
-$ git checkout ubuntu20
-$ sh autowrite_bashrc.sh
+$ bash setup.bash
 >> Enter ros1_workspace(abs path) : ~/ros1_ws
 >> ~/ros1_ws
 >> Enter ros2_workspace(abs path) : ~/ros2_ws
@@ -20,7 +19,7 @@ $ sh autowrite_bashrc.sh
 
 ![setting](images_for_readme/setting.png)
 
- In "Enter ros__x___workspace (abs path):", enter the ROS workspace that contains the absolute path. If you Enter empty, the setting will be skipped.
+ In "Enter ros2(or 1)_workspace (abs path):", enter the ROS workspace that contains the absolute path. If you Enter empty, the setting will be skipped.
 
 ## ROS Environment setup
 

@@ -1,3 +1,4 @@
+#!/bin/bash
 if test -z $1;then
 echo "Set ros2 workspace. (\$ sh ros2_init.sh /home/ubuntu/Desktop/ros2_ws)"
 exit 1
@@ -9,7 +10,16 @@ alias cw='cd '$1
 alias cs='cd '$1'/src'
 alias cm='cd '$1' && colcon build --symlink-install'
 
+UBUNTU_DISTRO=`cat /etc/os-release | grep VERSION_ID | sed -e 's/[^0-9]//g'`
+
+if [ $UBUNTU_DISTRO = 1604 ]; then
+source /opt/ros/bouncy/setup.bash
+elif [ $UBUNTU_DISTRO = 1804 ]; then
+source /opt/ros/dashing/setup.bash
+elif [ $UBUNTU_DISTRO = 2004 ]; then
 source /opt/ros/foxy/setup.bash
+fi
+
 source $1/install/local_setup.bash
 
 export PS1='($ROS_DISTRO):\[\033[01;34m\]\w\[\033[00m\]\$ '
