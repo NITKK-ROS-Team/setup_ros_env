@@ -11,8 +11,12 @@ $ cd ~
 $ git clone https://github.com/Ar-Ray-code/setup_ros_env.git
 $ cd setup_ros_env
 $ bash setup.bash
->> Enter ros1_workspace(abs path) : ~/ros1_ws
+>> Enter ros1-distro (e.g. noetic) : noetic
+>> noetic
+>> Enter ros1_workspace (abs path) : ~/ros1_ws
 >> ~/ros1_ws
+>> Enter ros2-distro (e.g. foxy) : foxy
+>> foxy
 >> Enter ros2_workspace(abs path) : ~/ros2_ws
 >> ~/ros2_ws
 ```
