@@ -9,8 +9,7 @@ Display the ROS environment on the terminal like pyenv.
 ```bash
 $ cd ~
 $ git clone https://github.com/Ar-Ray-code/setup_ros_env.git
-$ cd setup_ros_env
-$ bash setup.bash
+$ bash setup_ros_env/setup.bash
 >> Enter ros1-distro (e.g. noetic) : noetic
 >> noetic
 >> Enter ros1_workspace (abs path) : ~/ros1_ws
