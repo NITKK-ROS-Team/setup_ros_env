@@ -7,7 +7,7 @@ echo "if ! test -z \"\$ROS_DISTRO\"; then" >> ~/.bashrc
 echo "export PS1=\"(\$ROS_DISTRO):\[\033[01;34m\]\w\[\033[00m\]\$ \"" >> ~/.bashrc
 echo "fi" >> ~/.bashrc
 ## ROS1-Distro --------------------------------------------------------
-read -p "Enter ros1-distro (e.g. noetic) : " ros1_distro
+read -p "Enter ros1-distro or enter a blank (e.g. noetic) : " ros1_distro
 
 if test -z $ros1_distro;then
 echo "skip setting"
@@ -16,7 +16,7 @@ echo $ros1_distro
 fi
 
 ## ROS1-WS --------------------------------------------------------
-read -p "Enter ros1_workspace (abs path) : " ros1_workspace
+read -p "Enter ros1_workspace or enter a blank (e.g. ~/ros1_ws) : " ros1_workspace
 
 if test -z $ros1_workspace;then
 echo "skip setting"
@@ -27,7 +27,7 @@ echo "alias ros1_init=\"source ~/.ros1_init.bash $ros1_workspace $ros1_distro\""
 fi
 
 ## ROS2-Distro --------------------------------------------------------
-read -p "Enter ros2-distro (e.g. foxy) : " ros2_distro
+read -p "Enter ros2-distro or enter a blank (e.g. foxy) : " ros2_distro
 
 if test -z $ros2_distro;then
 echo "skip setting"
@@ -36,7 +36,7 @@ echo $ros2_distro
 fi
 
 ## ROS2-WS --------------------------------------------------------
-read -p "Enter ros2_workspace(abs path) : " ros2_workspace
+read -p "Enter ros2_workspace or enter a blank (e.g. ~/ros2_ws) : " ros2_workspace
 if test -z $ros2_workspace;then
 echo "skip setting"
 else
