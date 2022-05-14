@@ -36,7 +36,7 @@ echo $ros2_distro
 fi
 
 ## ROS2-WS --------------------------------------------------------
-read -p "Enter ros2_workspace(e.g. ~/ros2_ws or enter a blank) : " ros2_workspace
+read -p "Enter ros2_workspace or enter a blank (e.g. ~/ros2_ws) : " ros2_workspace
 if test -z $ros2_workspace;then
 echo "skip setting"
 else
