@@ -24,6 +24,14 @@ $ bash setup_ros_env/setup.bash
 
 ```bash
 wget https://raw.githubusercontent.com/Ar-Ray-code/setup_ros_env/master/auto_setup.bash && bash auto_setup.bash && rm auto_setup.bash
+>> Enter ros1-distro (e.g. noetic) : noetic
+>> noetic
+>> Enter ros1_workspace (abs path) : ~/ros1_ws
+>> ~/ros1_ws
+>> Enter ros2-distro (e.g. foxy) : foxy
+>> foxy
+>> Enter ros2_workspace(abs path) : ~/ros2_ws
+>> ~/ros2_ws
 ```
 
 ![setting](images_for_readme/setting.png)
