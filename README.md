@@ -20,6 +20,12 @@ $ bash setup_ros_env/setup.bash
 >> ~/ros2_ws
 ```
 
+## Automatic Setup
+
+```bash
+wget https://raw.githubusercontent.com/Ar-Ray-code/setup_ros_env/master/auto_setup.bash && bash auto_setup.bash && rm auto_setup.bash
+```
+
 ![setting](images_for_readme/setting.png)
 
  In "Enter ros2(or 1)_workspace (abs path):", enter the ROS workspace that contains the absolute path. If you Enter empty, the setting will be skipped.
