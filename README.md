@@ -53,9 +53,3 @@ example@example:~$ ros1_init
 example@example:~$ ros2_init
 (foxy):~$
 ```
-
-## About writer
-
-- Ar-Ray : Japanese student. 
-- Blog(Japanese) : https://ar-ray.hatenablog.com/
-- Twitter : https://twitter.com/Ray255Ar
